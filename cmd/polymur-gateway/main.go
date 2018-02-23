@@ -10,7 +10,7 @@ import (
 	"github.com/jamiealquiza/polymur/api"
 	"github.com/jamiealquiza/polymur/keysync"
 	"github.com/jamiealquiza/polymur/listener"
-	"github.com/jamiealquiza/polymur/output"
+	"github.com/ehlerst/polymur/output"
 	"github.com/jamiealquiza/polymur/pool"
 	"github.com/jamiealquiza/polymur/statstracker"
 	"github.com/jamiealquiza/runstats"

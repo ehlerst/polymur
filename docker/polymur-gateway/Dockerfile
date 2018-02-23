@@ -1,9 +1,9 @@
-FROM golang:1.8.3-alpine 
+FROM golang:1.10-alpine
 
 MAINTAINER Tim Ehlers <ehlerst@gmail.com>
 
 RUN apk add --no-cache git
-RUN go get -u github.com/jamiealquiza/polymur/...
-RUN go install github.com/jamiealquiza/polymur/cmd/polymur-gateway
+RUN go get -u github.com/ehlerst/polymur/...
+RUN go install github.com/ehlerst/polymur/cmd/polymur-gateway
 
 CMD ["/go/bin/polymur-gateway"]

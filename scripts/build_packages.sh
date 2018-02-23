@@ -14,7 +14,7 @@ mkdir -p ${BUILD}/usr/local/bin
 cp -r scripts/config/sysv/* ${BUILD}/.
 cp ${BUILDROOT}/* ${BUILD}/usr/local/bin/.
 
-PACKAGE_NAME="${BUILD}/polymur-${GITVERSION}.amzn.${ARCH}.rpm"
+PACKAGE_NAME="${BUILD}/polymur-${GITVERSION}.amzn1.${ARCH}.rpm"
 
 pushd ${BUILD}
 fpm -n polymur -s dir -t rpm -v ${GITVERSION} --description "${DESCRIPTION}" --conflicts polymur --replaces polymur --provides polymur -C ${BUILD} -p ${PACKAGE_NAME} --license "MIT" .

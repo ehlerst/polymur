@@ -8,7 +8,7 @@ import (
 	"syscall"
 
 	"github.com/jamiealquiza/polymur/listener"
-	"github.com/jamiealquiza/polymur/output"
+	"github.com/ehlerst/polymur/output"
 	"github.com/jamiealquiza/polymur/statstracker"
 	"github.com/jamiealquiza/runstats"
 
